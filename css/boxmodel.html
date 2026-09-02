@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #boxes {
+        background: darkblue;
+        display: flex;
+      }
+
+      .box {
+        height: 100px;
+        width: 100px;
+        background: aqua;
+        border: 2px solid black;
+        border-radius: 8px;
+        padding: 40px;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      @media(max-width:576px){
+        #boxes{
+          flex-direction: column;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="boxes">
+      <div class="box">box1</div>
+      <div class="box">box</div>
+      <div class="box">box</div>
+      <div class="box">box</div>
+    </div>
+  </body>
+</html>
