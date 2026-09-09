@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="username">
+    <button id="btn">submit</button>
+    <p id="typedData"></p>
+
+    <script>
+        const username = document.getElementById("username")
+        const btn = document.getElementById("btn")
+        const typedData = document.getElementById("typedData")
+        btn.addEventListener("click",()=>{
+            const data = username.value;
+            typedData.textContent = data
+        })
+    </script>
+</body>
+</html>

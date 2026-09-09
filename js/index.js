@@ -166,10 +166,24 @@
 // }
 // add()
 
-const add =(a,a,b,b,c)=>{
-    return a+a+b+b+c
-}
-console.log(add(1,2,3,6,5))
+// const add =(a,a,b,b,c)=>{
+//     return a+a+b+b+c
+// }
+// console.log(add(1,2,3,6,5))
+
+
+// function main(callback){
+//     console.log("this is main function")
+//     callback()
+// }
+// function greet(){
+//     console.log("this is callback function")
+// }
+// main(greet)
+
+(function add(){
+    console.log("this is called after creation")
+}())
 
 
 

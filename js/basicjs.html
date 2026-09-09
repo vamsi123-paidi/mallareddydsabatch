@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color: aqua;" id="heading">check console for output</h1>
+    <div class="container">these are class elements</div>
+    <div class="container">these are class elements</div>
+    <div class="container">these are class elements</div>
+    <div class="container">these are class elements</div>
+    <div class="container">these are class elements</div>
+
+
+    <script>
+        console.log("this is internal scripting")
+        const heading = document.getElementById('heading')
+        const container = document.getElementsByClassName("container")
+        console.log(heading)  
+        console.log(container)  
+        heading.style.color = "red"
+        for(let i = 0;i<container.length;i++){
+            container[i].style.color = "red"
+        }
+    </script>
+</body>
+</html>
